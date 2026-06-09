@@ -195,7 +195,7 @@ X button click = checkbox unchecked = menu closes. Thats as simple as I can tell
 
 But, after double checking. I am now seeing this weird thing happen where github website is showing
 me the error but my vs code live server isn't showing any. Here are some photos of proof. 
-This photo is my VS Code. As you can see, no errors. ![VS Code error](images/vs code error.png)
+This photo is my VS Code. As you can see, no errors. ![VS Code error](images/vs-code-error.png)
 
 Thank you for reading all of this.
 
