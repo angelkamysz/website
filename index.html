@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans:ital,wght@0,300;0,500;1,200;1,400&family=Poppins:wght@100;200;300;400&family=Raleway:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Angel Kamysz</title>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar large-screen-navbar">
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a href="#Introduction" class="nav-link hover-transition">
+              Introduction
+            </a>
+          </li>
+
+          <li class="nav-list-item">
+            <a href="#About" class="nav-link hover-transition">About Me</a>
+          </li>
+
+          <li class="nav-list-item">
+            <a href="#Experience" class="nav-link hover-transition">
+              Experience
+            </a>
+          </li>
+
+          <li class="nav-list-item">
+            <a href="#FunFacts" class="nav-link hover-transition">Fun Facts</a>
+          </li>
+
+          <li class="nav-list-item">
+            <a href="#Contact" class="nav-link hover-transition">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="navbar small-screen-navbar">
+        <input
+          type="checkbox"
+          class="navbar-toggle-trigger"
+          id="navbar-toggle-trigger"
+        />
+
+        <label
+          for="navbar-toggle-trigger"
+          id="navbar-toggle-expand-button"
+          class="navbar-circular-icon-button"
+          aria-label="open navbar list"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <div
+          id="small-screen-navbar-element-container"
+          class="small-screen-navbar-element-container"
+        >
+          <label
+            for="navbar-toggle-trigger"
+            class="navbar-toggle-close-button"
+            aria-label="close navbar list"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="#Introduction" class="nav-link hover-transition">
+                Introduction
+              </a>
+            </li>
+
+            <li class="nav-list-item">
+              <a href="#About" class="nav-link hover-transition">About Me</a>
+            </li>
+
+            <li class="nav-list-item">
+              <a href="#Experience" class="nav-link hover-transition">
+                Experience
+              </a>
+            </li>
+
+            <li class="nav-list-item">
+              <a href="#FunFacts" class="nav-link hover-transition">
+                Fun Facts
+              </a>
+            </li>
+
+            <li class="nav-list-item">
+              <a href="#Contact" class="nav-link hover-transition">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="dark-background-container section-below-navbar">
+      <div
+        class="hero-content space-evenly-distributed-row-container vertically-stacked-mid-screen-container content-container"
+      >
+        <div class="landing-image"></div>
+
+        <div class="landing-text-container">
+          <h1 class="heading-1">Angel Kamysz</h1>
+          <p>
+            Welcome to my personal website. This site shares information about
+            me, my background, my experience, and a few things I am learning in
+            web development.
+          </p>
+        </div>
+      </div>
+
+      <div id="Introduction" class="content-container">
+        <h1>Introduction</h1>
+        <p>
+          My name is Angel. I am creating this personal website to practice
+          HTML, CSS, JavaScript, responsive design, accessibility, and basic
+          website structure. This page uses the same layout ideas from the
+          assignment, but changes the content into a professional personal
+          website.
+        </p>
+      </div>
+    </div>
+
+    <div id="About" class="content-container">
+      <h1 class="clear-margin-bottom">About Me</h1>
+
+      <div
+        class="space-evenly-distributed-row-container vertically-stacked-mid-screen-container"
+      >
+        <div class="card">
+          <div>
+            <h2 class="clear-margin-top">Background</h2>
+            <p>
+              I am interested in technology, learning, and building projects
+              that help me improve my skills.
+            </p>
+          </div>
+
+          <a class="more-info-button">More Info</a>
+        </div>
+
+        <div class="popup-section-container">
+          <div class="popup-section">
+            <div class="space-between-distributed-row-container">
+              <h3>Background</h3>
+
+              <button
+                class="close-popup-button"
+                aria-label="close popup window"
+                title="close popup window"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+
+            <p>
+              This section gives more information about who I am. I wanted this
+              personal website to be simple, organized, and easy to read. I also
+              wanted to use what I learned in class, including sections,
+              navigation links, buttons, forms, and responsive styling.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <h2 class="clear-margin-top">Education</h2>
+            <p>
+              I am learning computer science and web development concepts,
+              including HTML, CSS, JavaScript, and debugging.
+            </p>
+          </div>
+
+          <a class="more-info-button">More Info</a>
+        </div>
+
+        <div class="popup-section-container">
+          <div class="popup-section">
+            <div class="space-between-distributed-row-container">
+              <h3>Education</h3>
+
+              <button
+                class="close-popup-button"
+                aria-label="close popup window"
+                title="close popup window"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+
+            <p>
+              This project shows practice with a complete webpage. It includes a
+              navbar, a landing section, cards, JavaScript popups, responsive
+              design, and a contact form.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <h2 class="clear-margin-top">Goals</h2>
+            <p>
+              My goal is to keep learning and build projects that show my
+              progress as a developer.
+            </p>
+          </div>
+
+          <a class="more-info-button">More Info</a>
+        </div>
+
+        <div class="popup-section-container">
+          <div class="popup-section">
+            <div class="space-between-distributed-row-container">
+              <h3>Goals</h3>
+
+              <button
+                class="close-popup-button"
+                aria-label="close popup window"
+                title="close popup window"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+
+            <p>
+              I want to continue improving my coding skills and become more
+              comfortable creating websites that are functional, responsive, and
+              accessible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dark-background-container">
+      <div id="Experience" class="content-container">
+        <h1>Experience</h1>
+
+        <div class="space-between-distributed-row-container content-container">
+          <div class="characteristics-text-margin-left">
+            <h2>HTML</h2>
+            <p>
+              HTML gives the page structure. In this website, HTML is used for
+              the navbar, headings, paragraphs, cards, buttons, and form.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-between-distributed-row-container content-container">
+          <div class="characteristics-text-margin-right">
+            <h2>CSS</h2>
+            <p>
+              CSS controls the layout and design. This page uses colors,
+              spacing, flexbox, hover effects, media queries, and responsive
+              styling.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-between-distributed-row-container content-container">
+          <div class="characteristics-text-margin-left">
+            <h2>JavaScript</h2>
+            <p>
+              JavaScript adds interaction to the page. The More Info buttons
+              open popup sections, the close buttons hide them, and the Fun
+              Facts section displays personal facts.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-between-distributed-row-container content-container">
+          <div class="characteristics-text-margin-right">
+            <h2>Responsive Design</h2>
+            <p>
+              The page changes layout on smaller screens. The large navbar is
+              replaced by a small-screen hamburger menu, and sections stack
+              vertically.
+            </p>
+          </div>
+        </div>
+
+        <div class="space-between-distributed-row-container content-container">
+          <div class="characteristics-text-margin-left">
+            <h2>Accessibility</h2>
+            <p>
+              Accessibility matters because websites should be usable for more
+              people. This page includes aria-labels for icon-only buttons and
+              clear section structure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="FunFacts" class="content-container fun-facts-section">
+      <div class="fun-facts-text">
+        <h1>Fun Facts</h1>
+        <p>A few fun things about me.</p>
+
+        <div id="personal-facts-list"></div>
+
+        <a class="load-personal-facts-button">Load Facts About Me</a>
+      </div>
+
+      <div class="fun-facts-image-container">
+        <img
+          src="./images/fun-facts.jpg"
+          alt="A personal photo for the fun facts section"
+          class="fun-facts-image"
+        />
+      </div>
+    </div>
+
+    <div class="dark-background-container">
+      <form id="Contact" class="content-container form">
+        <h1>Contact Me</h1>
+
+        <div
+          class="space-between-distributed-row-container vertically-stacked-sm-screen-container"
+        >
+          <p class="label-input-group form-element-container">
+            <span class="form-label">Name</span>
+            <input
+              aria-label="name"
+              class="form-input-box"
+              type="text"
+              id="name"
+              name="name"
+            />
+          </p>
+
+          <p class="label-input-group form-element-container">
+            <span class="form-label">Username</span>
+            <input
+              aria-label="username"
+              class="form-input-box"
+              type="text"
+              id="username"
+              name="username"
+            />
+          </p>
+        </div>
+
+        <div
+          class="space-between-distributed-row-container vertically-stacked-sm-screen-container"
+        >
+          <p class="label-input-group form-element-container">
+            <span class="form-label">Email</span>
+            <input
+              aria-label="email"
+              class="form-input-box"
+              type="email"
+              id="email"
+              name="email"
+            />
+          </p>
+
+          <p class="label-input-group form-element-container">
+            <span class="form-label">Phone Number</span>
+            <input
+              aria-label="phone"
+              class="form-input-box"
+              type="tel"
+              id="phone-number"
+              name="phone-number"
+            />
+          </p>
+        </div>
+
+        <div class="form-fieldset form-element-container">
+          <p class="form-label">What would you like to contact me about?</p>
+
+          <div>
+            <input type="checkbox" id="school" name="topic1" value="school" />
+            <label for="school">School</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="projects"
+              name="topic2"
+              value="projects"
+            />
+            <label for="projects">Projects</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="work" name="topic3" value="work" />
+            <label for="work">Work</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="questions"
+              name="topic4"
+              value="questions"
+            />
+            <label for="questions">Questions</label>
+          </div>
+
+          <div>
+            <input
+              type="checkbox"
+              id="feedback"
+              name="topic5"
+              value="feedback"
+            />
+            <label for="feedback">Feedback</label>
+          </div>
+        </div>
+
+        <label class="form-label" for="message">
+          Feel free to leave a message
+        </label>
+
+        <textarea
+          class="form-textarea form-element-container"
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+        ></textarea>
+
+        <div
+          class="space-evenly-distributed-row-container form-buttons-container"
+        >
+          <input class="form-button" type="submit" value="submit" />
+          <input class="form-button" type="reset" value="reset" />
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer">Copyright Ⓒ 2026 Angel Kamysz.</footer>
+  </body>
+</html>
