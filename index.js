@@ -47,7 +47,6 @@ const loadFactsAboutMe = function () {
 };
 
 loadFactsButton.addEventListener('click', loadFactsAboutMe);
-
 const navbarToggle = document.getElementById('navbar-toggle-trigger');
 const navbarCloseButton = document.getElementById('navbar-toggle-close-button');
 
