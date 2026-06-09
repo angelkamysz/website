@@ -193,5 +193,9 @@ basically what this code is doing is just checking with my html.
 Hamburger click = checkbox checked = menu opens
 X button click = checkbox unchecked = menu closes. Thats as simple as I can tell you.
 
+But, after double checking. I am now seeing this weird thing happen where github website is showing
+me the error but my vs code live server isn't showing any. Here are some photos of proof. 
+This photo is my VS Code. As you can see, no errors. ![VS Code error](vs code error.png)
+
 Thank you for reading all of this.
 
