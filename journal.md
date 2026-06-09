@@ -197,5 +197,8 @@ But, after double checking. I am now seeing this weird thing happen where github
 me the error but my vs code live server isn't showing any. Here are some photos of proof. 
 This photo is my VS Code. As you can see, no errors. ![VS Code error](images/vs-code-error.png)
 
+Now, I readded my files from my desktop to github and just recopied them ( I could have changed a line earlier
+and not remebered) but even after all that, I still was running into the same issue. ![github erorr](images/github-error.png)
+
 Thank you for reading all of this.
 
