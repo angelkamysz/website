@@ -111,3 +111,87 @@ const loadFactsButton = document.querySelector('.load-personal-facts-button');
 
 - I then ended on changing all of the colorts to more lighter colors and my favorite color olive green.
 - I didnt remove the previous colors but added mine to the root.
+- At the very end, I looked at WAVE for an accessiblity issues and I had only one:
+
+```
+1 Error Multiple form lables
+```
+
+I was looking around the page for some time and it took me sometime to find it. I had turn off Styles at the top of the wave to see it.
+WAVE is flagging this input:
+
+```
+<input
+  type="checkbox"
+  class="navbar-toggle-trigger"
+  id="navbar-toggle-trigger"
+/>
+```
+
+because it has two labels connected to it:
+
+```
+<label
+  for="navbar-toggle-trigger"
+  aria-label="open navbar list"
+>
+```
+
+and:
+
+```
+<label
+  for="navbar-toggle-trigger"
+  aria-label="close navbar list"
+>
+```
+
+That checkbox is being used as a toggle.
+
+Here was my fix for it.
+Hiding that checkbox from WAVE/screen readers because it is not a real form of input for the user.
+It is just being used for CSS behavior.
+
+Here is the problem:
+
+```
+<label
+  for="navbar-toggle-trigger"
+  class="navbar-toggle-close-button"
+  aria-label="close navbar list"
+>
+  <i class="fa-solid fa-xmark"></i>
+</label>
+```
+
+I changed it to this:
+
+```
+<button
+  type="button"
+  class="navbar-toggle-close-button"
+  id="navbar-toggle-close-button"
+  aria-label="close navbar list"
+>
+  <i class="fa-solid fa-xmark"></i>
+</button>
+```
+
+Adding in that id= part was the key here.
+I also added in this code to js file:
+
+```
+const navbarToggle = document.getElementById('navbar-toggle-trigger');
+const navbarCloseButton = document.getElementById('navbar-toggle-close-button');
+
+navbarCloseButton.addEventListener('click', () => {
+  navbarToggle.checked = false;
+});
+```
+
+basically what this code is doing is just checking with my html.
+Hamburger click = checkbox checked = menu opens
+X button click = checkbox unchecked = menu closes. Thats as simple as I can tell you.
+
+Thank you for reading all of this.
+
